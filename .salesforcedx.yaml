@@ -9,8 +9,8 @@ generate-password: true # auto-generates a password for the scratch org user
 #   - 04tB0000000Ln7i #package Id
 # package-post-source : # install, in this order, packages AFTER the source is pushed
 #   - 04tB0000000Ln7i #package Id
-# data-import : # execute data:treei:import plans in the specified order
-#   - data/importPlan.json
+data-import : # execute data:treei:import plans in the specified order
+  - data/masterImportPlan.json
 # execute-apex:
 #   - scripts/script1.cls
 #   - scripts/script2.cls
